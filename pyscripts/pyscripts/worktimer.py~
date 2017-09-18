@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+#put in single instance code
+
+wrktime = input('Time working: ')
+while  
