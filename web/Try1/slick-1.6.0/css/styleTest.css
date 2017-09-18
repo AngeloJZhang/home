@@ -1,0 +1,93 @@
+/* All Pages*/
+
+.trueTitle{
+
+}
+.socialMedia{
+	
+}
+#sidebar {
+}
+/*default box is block display*/
+
+.sectionTest{
+	background:grey;
+	height:auto;
+	padding:10px;
+	margin:10px;
+	/*without the bottom line of code the section box cannot box in
+	the div box .. this is called a collasped parent cuz the in inside
+	'floated' out of the parent*/
+}
+.clearfix:after {/*applying psedoclass after... after all of the children in 
+	the element it applys the below - google clearfix and u can find out how
+	this works*/
+	content:".";
+	display:block;
+	clear:both;
+	visiblity:hidden;
+	height:0;
+	line-height:0;
+}
+.mainBack {
+	background:yellow;
+	height:98%;
+	width:98%;
+	padding:1%;
+	margin:1%;
+	display:block;
+	border:double;
+}
+}
+.mainTest {
+	background:red;
+	width:50%;
+	height:auto;
+	padding:0px;
+	margin:10px;
+	display:block;
+	border:dotted;
+	border-width:5px;
+	float:right;
+	/*clear - to do with floating makes you make sure you 'clear pass' 
+	other floaters*/
+}
+/* Home Page */
+.above{
+	background:lightgreen;
+	height:100px;
+	width:100%;
+	float:left;
+	text-align:center;
+}
+.linkBox {
+	background:lightblue;
+	padding:1%;
+	height:400px;
+	width:31.333%;
+	margin:1%;
+	border:solid;
+	border-width:1%;
+	float:left;
+	text-align:center;
+	box-sizing:border-box;
+}
+.below{
+	background:red;
+	height:100px;
+	width:100%;
+	float:left;
+	text-align:center;
+	clear:both;
+
+}
+.wrapper{
+	margin:auto;
+	width:800px; /*width cannot be a percent if you want to use margin to center*/
+}
+
+/*Contact Page*/
+
+/*About Me*/
+
+/*Project Page*/

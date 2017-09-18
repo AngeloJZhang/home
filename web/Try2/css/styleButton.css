@@ -1,0 +1,25 @@
+.button{
+	background-color:none;
+	border:none;
+	color:white;
+	padding:5px;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:20px;
+	-webkit-transistion-duration:0.5s;
+	transition-duration:0.4s;
+	cursor:pointer;
+}
+.indexButton{
+	font-size:20px;
+	background-color:grey;
+	color:black;
+	border-radius:25%;
+	border: 2px solid grey; /* color */
+}
+.indexButton:hover{
+	background-color:black;
+	color:white;
+	border:white;
+}

@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Droid+Sans');
+html,body{
+  position:relative;
+  height:100%;
+  z-index:-1;
+}
+/*Button*/
+
+nav ul, nav ul li{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+div.wrap{
+  position:fixed;
+  top:5%;
+  left:5%;
+  z-index:10;
+
+}
+span.title{
+  display:block;
+  text-decoration:none;
+  cursor:pointer;
+  position:absolute;
+}
+ul.menuhold{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  transition: all 0.8s ease-in-out 0s,
+  visibility 0s linear 0.3s,
+  z-index 0s linear 0.01s;
+}
+ul.menuhold li{
+  display:inline-block;
+	padding-top:4em;
+	text-align:center;
+	color:#A0A0A0;
+	transition:all 0.5s;
+	cursor:pointer;
+}
+div.wrap:hover ul.menuhold{
+  visibility:visible;
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.5s;
+}
+div.wrap:hover div.line{
+	background-color:#F0F0F0;;
+}
+div.wrap:hover div.menubtn{
+	background-color:#D0D0D0;
+	border-color:#A0A0A0;
+}
+ul.menuhold li:hover{
+	color:#D0D0D0;
+	text-shadow:0 0 20px #000;
+	text-decoration:underline;
+}
+div.line {
+    width: 35px;
+    height: 5px;
+    background-color: #C0C0C0;
+    margin: 6px 0;
+    transition:all 0.8s;
+}
+div.menubtn{
+	border:4px solid #C0C0C0;
+	padding:8px 10px ;
+	border-radius:50%;
+	text-align:center;
+	transition:all 1s;
+}
+/*Button Scrollies*/
+.container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position:absolute;
+}
+
+.scroll{
+  position:relative;
+  width:100%;
+  height:100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  
+  /* Let's enforce some hardware acceleration */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+#control1:checked ~~ .scroll {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+#control2:checked ~~ .scroll {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+#control3:checked ~~~ .scroll {
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  -o-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+#control4:checked ~~~ .scroll {
+  -webkit-transform: translateY(-300%);
+  -moz-transform: translateY(-300%);
+  -o-transform: translateY(-300%);
+  -ms-transform: translateY(-300%);
+  transform: translateY(-300%);
+}
+
+/*Button End*/
+.panel{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+/*Sheet*/

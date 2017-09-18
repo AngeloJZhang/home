@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Droid+Sans');
+
+#background{
+	background:url("https://wallpaperscraft.com/image/dark_black_and_white_abstract_black_background_76353_1600x900.jpg");
+	background-size: 1600px 900px;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+#headwrapper{
+	background:black;
+	width:1400px; 
+	height:40px;
+	margin:0 auto;
+	padding-left:100px;
+	/*border:white;
+	border-width:2px;*/
+	opacity:0.8;
+}
+#logo{
+	/*background: black;*/
+	background-size:40px auto;
+	margin:auto 3px;
+	padding:0 auto;
+	font-size:40px;
+	font-family:"Yanone Kaffeesatz";
+	color:white;
+	opacity:1;
+	float:left;
+}
+#navbar{
+	/*background: blue;*/
+	background-size:auto 14px;
+	margin-left:30%;
+	padding-top:15px;
+	float:left;
+}
+.navelement{
+	padding-right:50px;
+	font-size:20px;
+	font-family:"Droid Sans";
+	color:lightgrey;
+	text-align:left;
+	text-decoration:none;
+}
+.navelement:hover{
+	color:white;
+	text-decoration:underline;
+}
+#bodywrapper{
+	width:1400px;
+	height:100%;
+	margin:0 auto;
+	clear:both;
+}
+.clearfix:after {
+	content:".";
+	display:block;
+	clear:both;
+	visiblity:hidden;
+	height:0;
+	line-height:0;
+}
+/*Buttons*/
+.btnwrapper{
+	margin:0 auto;
+	background-color:blue;
+	text-align:center;
+	position:fixed;
+	top:10%;
+	left:10%;
+}
+.btntitle{
+	padding:5px;
+	background-color:green;
+	cursor:pointer;
+	border:2px solid black;
+	margin:0 auto;
+}
+.btnCholder{
+
+}
