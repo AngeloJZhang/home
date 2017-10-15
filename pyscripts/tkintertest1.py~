@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+import tkinter as tk
+
+class testApp(tk.Frame):
+	def __init__(self,master=None):
+		tk.Frame.__init__(self,master=None)
+		self.grid()
+		self.createWidgets()
+	def createWidgets(self):
+		self.quitbutton = tk.Button(self,text="quit",command=self.quit)
+		self.hiLabel = tk.label(self,text="hi")
+		self.hiLabel.grid()
+		self.quitbutton.grid()
+
+app = testApp()
+app.master.title("testApp")
+app.mainloop()

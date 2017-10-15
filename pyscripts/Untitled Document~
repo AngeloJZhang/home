@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+holder = list()
+holder.append("Timer")
+#print(len(holder))
+print(holder[1])
